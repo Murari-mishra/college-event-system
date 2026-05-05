@@ -94,7 +94,7 @@ const AttendanceStats = ({ eventId }) => {
         onClick={fetchStats}
         className="btn-secondary w-full justify-center text-sm py-2"
       >
-        🔄 Refresh Stats
+         Refresh Stats
       </button>
     </div>
   );

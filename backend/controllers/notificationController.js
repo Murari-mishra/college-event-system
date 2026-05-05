@@ -80,7 +80,7 @@ const notifyRegistration = async (userId, event, registrationId) => {
   try {
     await Notification.create({
       userId,
-      title: '✅ Registration Confirmed',
+      title: 'Registration Confirmed',
       message: `You are registered for "${event.title}" on ${new Date(event.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' })} at ${event.venue}.`,
       type: 'registration',
       eventId: event._id,

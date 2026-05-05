@@ -16,18 +16,18 @@ const Logo = () => (
 );
 
 const adminLinks = [
-  { to: '/admin/dashboard',    label: 'Dashboard',     icon: '⊞' },
-  { to: '/admin/analytics',    label: 'Analytics',     icon: '📊' },
-  { to: '/admin/events',       label: 'Manage Events', icon: '📅' },
-  { to: '/admin/create-event', label: 'Create Event',  icon: '+' },
-  { to: '/admin/scanner',      label: 'QR Scanner',    icon: '📷' },
+  { to: '/admin/dashboard',    label: 'Dashboard',     icon: '' },
+  { to: '/admin/analytics',    label: 'Analytics',     icon: '' },
+  { to: '/admin/events',       label: 'Manage Events', icon: '' },
+  { to: '/admin/create-event', label: 'Create Event',  icon: '' },
+  { to: '/admin/scanner',      label: 'QR Scanner',    icon: '' },
 ];
 
 const studentLinks = [
-  { to: '/student/dashboard',        label: 'Dashboard',        icon: '⊞' },
-  { to: '/student/events',           label: 'All Events',       icon: '🎯' },
-  { to: '/student/calendar',         label: 'Calendar',         icon: '📅' },
-  { to: '/student/my-registrations', label: 'My Registrations', icon: '📋' },
+  { to: '/student/dashboard',        label: 'Dashboard',        icon: '' },
+  { to: '/student/events',           label: 'All Events',       icon: '' },
+  { to: '/student/calendar',         label: 'Calendar',         icon: '' },
+  { to: '/student/my-registrations', label: 'My Registrations', icon: '' },
 ];
 
 const NotificationPanel = ({ onClose }) => {
@@ -101,7 +101,7 @@ const NotificationPanel = ({ onClose }) => {
           </div>
         ) : notifications.length === 0 ? (
           <div className="text-center py-10">
-            <p className="text-2xl mb-2">🔔</p>
+            <p className="text-2xl mb-2"></p>
             <p className="text-sm text-surface-400 font-medium">No notifications yet</p>
           </div>
         ) : (

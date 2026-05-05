@@ -10,8 +10,8 @@ const categoryColors = {
 };
 
 const categoryIcons = {
-  Technical: '💻', Cultural: '🎭', Sports: '⚽',
-  Academic: '📚', Workshop: '🛠️', Other: '📌',
+  Technical: '', Cultural: '', Sports: '',
+  Academic: '', Workshop: '', Other: '',
 };
 
 const formatDate = (dateStr) => {
@@ -83,7 +83,7 @@ const CapacityBar = ({ current, max }) => {
 
   const barColor  = isFull ? 'bg-accent-rose' : isAlmost ? 'bg-accent-amber' : 'bg-emerald-500';
   const textColor = isFull ? 'text-accent-rose' : isAlmost ? 'text-amber-600' : 'text-emerald-600';
-  const label     = isFull ? '🔴 Full' : isAlmost ? '🟡 Almost full' : '🟢 Available';
+  const label     = isFull ? ' Full' : isAlmost ? ' Almost full' : ' Available';
 
   return (
     <div className="space-y-1">
@@ -190,13 +190,13 @@ export const EventCard = ({ event, role, onRegister, onDelete, onEdit, onViewPar
         {/* Meta info */}
         <div className="space-y-1.5 mb-4">
           <div className="flex items-center gap-2 text-xs text-surface-600">
-            <span className="w-4 text-center">📅</span>
+            <span className="w-4 text-center"></span>
             <span className="font-medium">{formatDate(event.date)}</span>
             <span className="text-surface-300">·</span>
             <span>{event.time}</span>
           </div>
           <div className="flex items-center gap-2 text-xs text-surface-600">
-            <span className="w-4 text-center">📍</span>
+            <span className="w-4 text-center"></span>
             <span className="font-medium truncate">{event.venue}</span>
           </div>
         </div>
@@ -237,16 +237,16 @@ export const EventCard = ({ event, role, onRegister, onDelete, onEdit, onViewPar
                 Registering...
               </span>
             ) : event.participantCount >= event.maxParticipants ? (
-              '🔴 Event Full'
+              'Event Full'
             ) : (
-              <><span>🎟️</span> Register Now</>
+              <><span></span> Register Now</>
             )}
           </button>
         )}
 
         {role === 'student' && event.isRegistered && (
           <div className="flex items-center justify-center gap-2 py-2 text-sm text-emerald-600 font-semibold">
-            <span>✅</span> You're registered!
+            <span></span> You're registered!
           </div>
         )}
 
@@ -263,13 +263,13 @@ export const EventCard = ({ event, role, onRegister, onDelete, onEdit, onViewPar
               onClick={() => onEdit(event)}
               className="btn-secondary justify-center text-xs px-3 py-2"
             >
-              ✏️
+              
             </button>
             <button
               onClick={() => onDelete(event._id)}
               className="btn-danger justify-center text-xs px-3 py-2"
             >
-              🗑️
+            
             </button>
           </div>
         )}

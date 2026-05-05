@@ -10,9 +10,9 @@ const transporter = nodemailer.createTransport({
 
 transporter.verify((error) => {
   if (error) {
-    console.log('❌ Email service error:', error.message);
+    console.log('Email service error:', error.message);
   } else {
-    console.log('✅ Email service ready');
+    console.log('Email service ready');
   }
 });
 

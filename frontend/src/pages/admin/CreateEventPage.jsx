@@ -72,8 +72,8 @@ export const CreateEventPage = () => {
 
       <div className="card p-8">
         <form onSubmit={handleSubmit} className="space-y-6">
-          {error   && <div className="alert-error"><span>⚠️</span>{error}</div>}
-          {success && <div className="alert-success"><span>🎉</span>{success}</div>}
+          {error   && <div className="alert-error"><span></span>{error}</div>}
+          {success && <div className="alert-success"><span></span>{success}</div>}
 
           {/* Image Upload */}
           <div className="form-group">
@@ -104,7 +104,7 @@ export const CreateEventPage = () => {
               ) : (
                 <label className="flex flex-col items-center justify-center h-40 cursor-pointer gap-3 p-6">
                   <div className="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-2xl">
-                    🖼️
+                    
                   </div>
                   <div className="text-center">
                     <p className="text-sm font-semibold text-surface-700">
@@ -230,7 +230,7 @@ export const CreateEventPage = () => {
                   })}
                 </p>
               )}
-              {form.venue && <p className="text-sm text-surface-600">📍 {form.venue}</p>}
+              {form.venue && <p className="text-sm text-surface-600"> {form.venue}</p>}
             </div>
           )}
 
@@ -244,7 +244,7 @@ export const CreateEventPage = () => {
                   <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                   {imageFile ? 'Uploading & Creating...' : 'Creating...'}
                 </span>
-              ) : <><span>🚀</span> Publish Event</>}
+              ) : <><span></span> Publish Event</>}
             </button>
           </div>
         </form>

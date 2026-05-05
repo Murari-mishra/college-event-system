@@ -252,7 +252,7 @@ export const MyRegistrationsPage = () => {
             onClick={() => setQrRegId(reg._id)}
             className="btn-secondary text-sm px-3 py-1.5"
           >
-            📱 QR Code
+             QR Code
           </button>
 
           {isPast && !alreadyFeedback && (
@@ -265,7 +265,7 @@ export const MyRegistrationsPage = () => {
           )}
           {isPast && alreadyFeedback && (
             <span className="text-xs text-emerald-600 font-semibold flex items-center gap-1 px-3 py-1.5">
-              ✅ Feedback submitted
+               Feedback submitted
             </span>
           )}
         </div>

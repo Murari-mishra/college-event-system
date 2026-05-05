@@ -110,8 +110,8 @@ export const ViewParticipantsPage = () => {
             <div>
               <h1 className="page-title text-2xl">{event.title}</h1>
               <div className="flex flex-wrap gap-4 mt-3 text-sm text-surface-600">
-                <span>📅 {formatDate(event.date)} · {event.time}</span>
-                <span>📍 {event.venue}</span>
+                <span>{formatDate(event.date)} · {event.time}</span>
+                <span> {event.venue}</span>
                 <span>👥 {data?.count || 0} / {event.maxParticipants} registered</span>
               </div>
             </div>
@@ -315,7 +315,7 @@ export const ViewParticipantsPage = () => {
               disabled={exporting}
               className="text-xs text-brand-600 font-semibold hover:text-brand-700 flex items-center gap-1"
             >
-              📥 Export all to CSV
+               Export all to CSV
             </button>
           </div>
         </div>

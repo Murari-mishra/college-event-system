@@ -73,10 +73,10 @@ export const AdminDashboard = () => {
 
       {/* Stats */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <StatCard icon="📅" label="Total Events" value={events.length} sub={`${upcomingEvents.length} upcoming`} color="bg-brand-50" />
-        <StatCard icon="👥" label="Registrations" value={totalParticipants} sub="across all events" color="bg-violet-50" />
-        <StatCard icon="🔥" label="Upcoming" value={upcomingEvents.length} sub="events scheduled" color="bg-amber-50" />
-        <StatCard icon="✅" label="Concluded" value={pastEvents.length} sub="past events" color="bg-emerald-50" />
+        <StatCard icon="" label="Total Events" value={events.length} sub={`${upcomingEvents.length} upcoming`} color="bg-brand-50" />
+        <StatCard icon="" label="Registrations" value={totalParticipants} sub="across all events" color="bg-violet-50" />
+        <StatCard icon="" label="Upcoming" value={upcomingEvents.length} sub="events scheduled" color="bg-amber-50" />
+        <StatCard icon="" label="Concluded" value={pastEvents.length} sub="past events" color="bg-emerald-50" />
       </div>
 
       {/* Content grid */}
@@ -125,7 +125,7 @@ export const AdminDashboard = () => {
           <h2 className="section-title mb-5">Recent Registrations</h2>
           {registrations.length === 0 ? (
             <div className="empty-state py-8">
-              <p className="empty-icon">📋</p>
+              <p className="empty-icon"></p>
               <p className="empty-title">No registrations yet</p>
             </div>
           ) : (

@@ -218,13 +218,13 @@ export const CalendarPage = () => {
                 onClick={() => handleRegister(selectedEvent._id)}
                 className="btn-primary w-full justify-center py-3"
               >
-                🎟️ Register for this Event
+                 Register for this Event
               </button>
             )}
 
             {selectedEvent.isRegistered && (
               <div className="flex items-center justify-center gap-2 py-3 text-emerald-600 font-semibold">
-                ✅ You're registered for this event!
+                You're registered for this event!
               </div>
             )}
           </div>

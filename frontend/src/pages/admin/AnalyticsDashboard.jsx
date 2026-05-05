@@ -150,10 +150,10 @@ export const AnalyticsDashboard = () => {
       {/* Summary stats */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {[
-          { label: 'Total Events', value: events.length, icon: '📅', color: 'bg-brand-50' },
-          { label: 'Total Registrations', value: totalRegs, icon: '👥', color: 'bg-violet-50' },
-          { label: 'Active Events', value: activeEvents, icon: '🔥', color: 'bg-amber-50' },
-          { label: 'Departments', value: departments, icon: '🏛️', color: 'bg-emerald-50' },
+          { label: 'Total Events', value: events.length, icon: '', color: 'bg-brand-50' },
+          { label: 'Total Registrations', value: totalRegs, icon: '', color: 'bg-violet-50' },
+          { label: 'Active Events', value: activeEvents, icon: '', color: 'bg-amber-50' },
+          { label: 'Departments', value: departments, icon: '', color: 'bg-emerald-50' },
         ].map((s) => (
           <div key={s.label} className="stat-card">
             <div className={`stat-icon ${s.color}`}>{s.icon}</div>
